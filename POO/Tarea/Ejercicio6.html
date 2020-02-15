@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Ejercicio6</title>
+ <meta charset="utf-8">
+</head>
+<body>
+<script>
+function RetornarVariableEntera(a1,a2,a3,a4,a5) 
+{
+if (a1>10) 
+{
+	return a1;
+}
+else
+{
+if (a2>100) 
+{
+	return a2;
+}
+else
+{
+	if (a3>1000) 
+{
+    return a3;
+}
+else
+{
+if (a4>10000) 
+{
+   return a4;
+}
+else
+{
+if(a5>100000)
+{
+  return a5;
+}
+}
+}
+}
+}
+}
+var resultado;
+resultado=prompt('Ingrese cualquier valor positivo de 5 digitos');
+resultado=parseInt(resultado);
+document.write('La cantidad de digitos ingresados es: '+RetornarVariableEntera(resultado));
+</script>
+</body>
+</html>

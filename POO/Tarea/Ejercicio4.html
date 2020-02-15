@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <h1>Realizar una función a la cual le envíe tres enteros y retorne el mayor de ellos.</h1>
+ <meta charset="utf-8">
+</head>
+<body>
+<script>
+function RetornarelMayor(a1,a2,a3) 
+{
+if (a1>a2 && a1>a3) 
+{
+	return a1;
+}
+else
+{
+if (a2>a3) 
+{
+	return a2;
+}
+else
+{
+	return a3;
+}
+}
+}
+var num1,num2,num3;
+num1=prompt('Ingrese numero 1: ','');
+num2=prompt('Ingrese numero 2: ','');
+num3=prompt('Ingrese numero 3: ','');
+num1=parseInt(num1);
+num2=parseInt(num2);
+num3=parseInt(num3);
+document.write('Los valores son: '+num1+' '+num2+' '+num3+'<br>');
+var mayor;
+mayor=RetornarelMayor(num1,num2,num3);
+document.write('El mayor de los valores es: '+mayor);
+</script>
+</body>
+</html>

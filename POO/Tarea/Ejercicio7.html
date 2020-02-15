@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Ejercicio7</title>
+ <meta charset="utf-8">
+</head>
+<body>
+<script>
+function RetornarPromedio(a1,a2,a3)
+{
+	var promedio=(a1+a2+a3)/3;
+	return promedio;
+}
+var num1,num2,num3;
+num1=prompt('Ingrese el Primer numero: ','');
+num2=prompt('Ingrese el Segundo numero: ','');
+num3=prompt('Ingrese el Tercer numero: ','');
+num1=parseInt(num1);
+num2=parseInt(num2);
+num3=parseInt(num3);
+document.write('Los numeros ingresados son: '+num1+' '+num2+' '+num3+'<br>');
+var promedio2;
+promedio2=RetornarPromedio(num1,num2,num3);
+document.write('El promedio de los 3 numeros es: '+promedio2);
+</script>
+</body>
+</html>
